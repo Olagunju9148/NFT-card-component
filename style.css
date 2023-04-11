@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url(Outfit/static/Outfit-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid black ; */
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(217, 54%, 11%);
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    flex-direction: column;
+    background-color: #0c1729;
+    padding: 20px;
+}
+
+.card {
+    background: hsl(216, 50%, 16%);
+    width: 320px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+.overlay {
+    position: relative;
+}
+
+.equilibrium img {
+    position: relative;
+    width: 320px;
+    border-radius: 30px;
+    padding: 20px;
+    right: 20px;
+    bottom: 10px;
+}
+
+.view img {
+    position: absolute;
+    padding: 115px;
+    margin: auto;
+    margin-top: 10px;
+    width: 282px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    transition: 1s ease;
+    opacity: 0;
+}
+
+.content a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 0;
+}
+.content p {
+    padding-top: 10px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    width: 100%;
+    border-bottom: 0.1px solid hsl(215, 51%, 70%)
+}
+.eth-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: hsl(178, 100%, 50%);
+    margin-bottom: 20px;
+}
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+    color: hsl(215, 51%, 70%);
+}
+.profile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    right: 30px;
+}
+.profile img {
+    border: 1px solid #ffff;
+    border-radius: 50%;
+    width: 40px;
+}
+
+.profile p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 500;
+    position: relative;
+    left: 10px;
+}
+.profile a {
+    color: #ffff;
+    text-decoration: none;
+}
+a:hover {
+    color: hsl(178, 100%, 50%);
+}
+.view img:hover {
+    opacity: 0.7;
+    transition: 1s ease;
+    background-color: hsl(178, 100%, 50%);
+}
